@@ -17,6 +17,9 @@ const WelcomeBlock = styled.div`
   height: 100vh;
   padding-top: 1.0em;
   padding-left: 1.0em;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
   p, h1 {
     color: white;
     opacity: 1.0 !important;

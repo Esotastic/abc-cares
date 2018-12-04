@@ -4,11 +4,42 @@ import Layout from '../components/layout'
 import DonatePage from "./donate";
 import HelpedPage from "./who-we-help";
 import styled, {css} from "styled-components";
+import { FaToolbox, FaBriefcaseMedical, FaGraduationCap } from 'react-icons/fa';
 
 const AboutWrapper = styled.div`
   padding-top: 2%;
+  padding-bottom: 10%;
+  @media (max-width: 700px) {
+    padding-bottom: 5%;
+  }
+  
 `;
 
+const StyledToolbox = styled(FaToolbox)`
+  color: green;
+`;
+
+const AboutGeneral = styled.div`
+  width: 33%;
+  display: inline-block;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+`
+const AboutHealth = styled.div`
+  width: 33%;
+  display: inline-block;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+`
+const AboutEducation = styled.div`
+  width: 33%;
+  display: inline-block;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+`
 
 
 
@@ -16,25 +47,20 @@ const AboutPage = () => (
   <Layout>
     <AboutWrapper>
       <h1>About ABC Cares</h1>
-      <p>
-        ABC members have for years given back to their communities in enormous ways.
-        Whether through the annual ABC Handlebars for the Holidays event, 
-        golf and fishing tournaments (which benefited local charities), or its 
-        partnership with the American Red Cross, we have helped make our world a better place to live.
-        <br></br>
-        <br></br>
-        But when one of our own was in need and we didn’t have a conduit to help them directly, 
-        it made us jump to action. So the ABC Cares Foundation was formed. 
-        And since being granted it’s IRS 501c(3) status in late 2010, the ABC Cares Foundation has made a big impact.
-      </p>
-      <h3>ABC Cares Board of Trustees</h3>
-      <ul>
-        <li>Rex Kirby, Verdex Construction</li>
-        <li>Gene Herman, Herman Construction Services, Inc.</li>
-        <li>James McConchie, Elcon Electric, Inc.</li>
-        <li>Harold Yarborough, D&B Tile Distributors</li>
-        <li>Peter Dyga, President and CEO, Associated Builders and Contractors</li>
-      </ul>
+      <AboutGeneral>
+        <StyledToolbox/>
+        ABC Cares is an IRS 501c3 created to give back to the members of the construction industry when they need
+        it most. 
+      </AboutGeneral>
+      <AboutHealth>
+        <FaBriefcaseMedical/>
+        It provides rapid financial assistance to construction workers affected by tragedies including injuries, 
+        death, illness and other unfortunate circumstances.
+      </AboutHealth>
+      <AboutEducation>
+        <FaGraduationCap/>
+        It also provides scholarships and educational stipends for exceptional individuals. 
+      </AboutEducation>
     </AboutWrapper>
   </Layout>
 );
