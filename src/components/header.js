@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled, {css} from "styled-components";
 import DonateButton from '../components/donate-button';
+import { FaHandHoldingHeart } from 'react-icons/fa';
 
 const StyledHeader = styled.div`
   background: #003E7B;
@@ -34,6 +35,14 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
+const StyledHand = styled(FaHandHoldingHeart)`
+  margin-left: 0.5em;
+`
+
+
+
+
+
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <HeaderContainer>
@@ -42,7 +51,7 @@ const Header = ({ siteTitle }) => (
           ABC Cares Foundation
         </StyledLink>
       </h1>
-      <DonateButton>Donate Now!</DonateButton>
+      <DonateButton>Donate Now!<StyledHand/></DonateButton>
     </HeaderContainer>
   </StyledHeader>
 )

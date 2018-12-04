@@ -1,5 +1,6 @@
-import React from 'react'
-import styled, {css} from "styled-components"
+import React from 'react';
+import styled, {css} from "styled-components";
+import {HandHoldingHeart} from "styled-icons/fa-solid/HandHoldingHeart";
 
 const DonateButton = styled.button`
   background: transparent;
@@ -15,6 +16,10 @@ const DonateButton = styled.button`
       color: white;
     `};
 `;
+
+const HandHeart = styled(HandHoldingHeart)`
+    color: red;
+`
 
 // const DonateButton = () => {
 //   return (
