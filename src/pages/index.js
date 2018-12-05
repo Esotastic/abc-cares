@@ -10,6 +10,7 @@ import AboutPage from "./about";
 import HomePage from "./home";
 import DonatePage from "./donate";
 import HelpedPage from "./who-we-help";
+import Footer from "../components/footer";
 
 
 const IndexPage = () => (
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <AboutPage />
     <HelpedPage />
     <DonatePage />
+    <Footer />
   </Layout>
 )
 

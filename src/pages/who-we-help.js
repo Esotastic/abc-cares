@@ -1,19 +1,36 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import styled, {css} from "styled-components";
+
+const HelpWrapper = styled.div`
+padding-top: 2%;
+padding-bottom: 5%;
+`
+const HelpedTile = styled.div`
+  width: 33%;
+  display: inline-block;
+  border: black solid 2px;
+  margin: .5%;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+`
 
 const HelpedPage = () => (
   <Layout>
+    <HelpWrapper>
     <h1>Who We've Helped</h1>
-    <p>In less than seven years, ABC Cares has donated more than <b>$60,000</b> to construction professionals and their families, including:</p>
-    <ul>
-      <li>A life-long construction professional who needed help to participate in an out-of-state clinical trial for pancreatic cancer .</li>
-      <li>A long-time champion of ABC’s charitable fishing tournaments who was financially devastated by his fight with cancer.</li>
-      <li>A career industry professional who suffered a severe and debilitating heart attack.</li>
-      <li>The surviving spouse of a construction professional who suffered a fatal industrial accident.</li>
-      <li>A drywall craftsman, and his daughters, whose sudden loss of their mother left the entire family with inimitable needs.</li>
-    </ul> 
-    <p>And many others.</p>
+    <HelpedTile>
+      <img src="https://i.imgur.com/xJWrkOC.jpg"></img>
+    </HelpedTile>
+    <HelpedTile>
+      <img src="https://i.imgur.com/xJWrkOC.jpg"></img>
+    </HelpedTile>
+    <HelpedTile>
+      <img src="https://i.imgur.com/xJWrkOC.jpg"></img>
+    </HelpedTile>
+    </HelpWrapper>
   </Layout>
 );
 

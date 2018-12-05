@@ -26,20 +26,6 @@ const AboutGeneral = styled.div`
     width: 100%;
   }
 `
-const AboutHealth = styled.div`
-  width: 33%;
-  display: inline-block;
-  @media (max-width: 700px) {
-    width: 100%;
-  }
-`
-const AboutEducation = styled.div`
-  width: 33%;
-  display: inline-block;
-  @media (max-width: 700px) {
-    width: 100%;
-  }
-`
 
 
 
@@ -52,15 +38,15 @@ const AboutPage = () => (
         ABC Cares is an IRS 501c3 created to give back to the members of the construction industry when they need
         it most. 
       </AboutGeneral>
-      <AboutHealth>
+      <AboutGeneral>
         <FaBriefcaseMedical/>
         It provides rapid financial assistance to construction workers affected by tragedies including injuries, 
         death, illness and other unfortunate circumstances.
-      </AboutHealth>
-      <AboutEducation>
+      </AboutGeneral>
+      <AboutGeneral>
         <FaGraduationCap/>
         It also provides scholarships and educational stipends for exceptional individuals. 
-      </AboutEducation>
+      </AboutGeneral>
     </AboutWrapper>
   </Layout>
 );

@@ -12,18 +12,15 @@ const MenuList = styled.ul`
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 0;
-  li {
-    
-  }
 `;
 
 const StyledLink = styled(Link)`
   font-family: sans-serif;
   text-decoration: none;
-  width: 48px;
-  height: 48px;
+  display: block;
+  width: 100%;
+  height: 100%;
   &:hover {
-    transition: fill 0.25s;
     color: red;
   }
 `;

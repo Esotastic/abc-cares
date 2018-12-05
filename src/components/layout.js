@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled, {css} from "styled-components";
-
-import Header from './header'
-import Menu from "./menu";
 import './layout.css'
 
 //Main layout, fonts, color and margin.
