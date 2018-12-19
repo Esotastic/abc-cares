@@ -25,9 +25,6 @@ const HeaderContainer = styled.div`
     margin: 0;
     text-align: center;
   }
-  ${DonateButton} {
-    text-align: center;
-  }
 `;
 
 const StyledLink = styled(Link)`

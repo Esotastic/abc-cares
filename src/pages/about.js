@@ -8,7 +8,11 @@ import { FaToolbox, FaBriefcaseMedical, FaGraduationCap } from 'react-icons/fa';
 
 const AboutWrapper = styled.div`
   padding-top: 2%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
+  padding: .5em;
+  h1 {
+    color: blue;
+  }
   @media (max-width: 700px) {
     padding-bottom: 5%;
   }
@@ -17,11 +21,32 @@ const AboutWrapper = styled.div`
 
 const StyledToolbox = styled(FaToolbox)`
   color: green;
+  display: block;
+  margin: auto;
+  height: 5em;
+  width: 50%;
+`;
+const StyledBriefcase = styled(FaBriefcaseMedical)`
+  color: green;
+  display: block;
+  height: 5em;
+  width: 50%;
+  margin: auto;
+`;
+const StyledGradcap = styled(FaGraduationCap)`
+  color: green;
+  display: block;
+  height: 5em;
+  width: 50%;
+  margin: auto;
 `;
 
 const AboutGeneral = styled.div`
   width: 33%;
   display: inline-block;
+  height: auto;
+  padding: 1em;
+  text-align: center;
   @media (max-width: 700px) {
     width: 100%;
   }
@@ -39,12 +64,12 @@ const AboutPage = () => (
         it most. 
       </AboutGeneral>
       <AboutGeneral>
-        <FaBriefcaseMedical/>
+        <StyledBriefcase/>
         It provides rapid financial assistance to construction workers affected by tragedies including injuries, 
         death, illness and other unfortunate circumstances.
       </AboutGeneral>
       <AboutGeneral>
-        <FaGraduationCap/>
+        <StyledGradcap/>
         It also provides scholarships and educational stipends for exceptional individuals. 
       </AboutGeneral>
     </AboutWrapper>
