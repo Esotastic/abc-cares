@@ -5,7 +5,7 @@ import styled from "styled-components";
 const FooterWrapper = styled.div`
   color: grey;
   display: inline-block;
-  margin-top: .5%;
+  margin-top: 2%;
 `;
 
 const Footer = () => (

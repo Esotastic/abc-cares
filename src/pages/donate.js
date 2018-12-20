@@ -9,7 +9,6 @@ const DonatePage = () => (
     <p>
       Here’s where you can help. 
       <br></br>
-      <br></br>
       Please spread the word about the ABC Cares Foundation and think of the Foundation 
       when you hear of a story of an industry professional and/or their family in need. 
       And would you please consider including the ABC Cares Foundation, a 100% tax deductible, 
