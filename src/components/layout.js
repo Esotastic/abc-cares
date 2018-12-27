@@ -8,6 +8,9 @@ import './layout.css'
 //Main layout, fonts, color and margin.
 const LayoutStyle = styled.div`
   font-family: sans-serif;
+  h1 {
+    font-family: Arial;
+  }
 `
 
 
