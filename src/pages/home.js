@@ -11,8 +11,7 @@ const IndexWrapper = styled.div`
 `;
 
 const WelcomeBlock = styled.div`
-  background: #202020;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 50%;
   height: 100vh;
   padding-top: 1.0em;

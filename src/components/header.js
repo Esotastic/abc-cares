@@ -17,7 +17,7 @@ const HeaderContainer = styled.div`
   font-family: sans-serif;
   margin: 0 auto;
   maxWidth: 960px;
-  padding: 1.45rem 1.0875rem;
+  padding: 1rem 1.0875rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +29,6 @@ const HeaderContainer = styled.div`
 
 const StyledLink = styled(Link)`
   color: white;
-  text-decoration: none;
 `;
 
 const StyledHand = styled(FaHandHoldingHeart)`

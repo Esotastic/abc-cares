@@ -10,7 +10,7 @@ const StyledButton = styled.button`
     color: #FFFFFF;
     text-align: center;
     font-size: 1.5em;
-    padding: .5em;
+    padding: .25em;
     width: auto;
     transition: all 0.5s;
     cursor: pointer;

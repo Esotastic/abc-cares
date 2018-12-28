@@ -20,7 +20,8 @@
     "styled-icons": "^5.2.2",
     "typography": "^0.16.18",
     "typography-theme-funston": "^0.16.18",
-    "typography-theme-kirkham": "^0.16.18"
+    "typography-theme-kirkham": "^0.16.18",
+    "typography-theme-lincoln": "^0.16.18"
   },
   "keywords": [
     "gatsby"

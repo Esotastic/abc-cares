@@ -7,12 +7,11 @@ import styled, {css} from "styled-components";
 import { FaToolbox, FaBriefcaseMedical, FaGraduationCap } from 'react-icons/fa';
 
 const AboutWrapper = styled.div`
-  padding-top: 2%;
+  padding-top: .5%;
   padding-bottom: 5%;
+  margin: auto;
   padding: .5em;
-  h1 {
-    color: blue;
-  }
+  text-align:center;
   @media (max-width: 700px) {
     padding-bottom: 5%;
   }
