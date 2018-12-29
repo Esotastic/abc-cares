@@ -4,12 +4,12 @@ import Layout from '../components/layout'
 import styled, {css} from "styled-components";
 
 const HelpWrapper = styled.div`
-padding-top: 2%;
-padding-bottom: 5%;
-text-align:center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  text-align:center;
 `
 const Overlay = styled.div`
-  position: absolute;
+  
   top: 0;
   bottom: 0;
   left: 0;
@@ -23,7 +23,6 @@ const Overlay = styled.div`
 const TextImage = styled.div`
   color: white;
   font-size: 20px;
-  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -37,8 +36,9 @@ const HelpedTile = styled.div`
   display: inline-block;
   margin: auto;
   padding: .5%;
-  
-
+  &:hover ${Overlay} {
+    opacity: .5;
+  }
   @media (max-width: 700px) {
     width: 100%;
   }
@@ -49,9 +49,9 @@ const HelpedPage = () => (
     <HelpWrapper>
     <h1>Who We've Helped</h1>
     <HelpedTile>
-      <img src="https://i.imgur.com/xJWrkOC.jpg"></img>
+    <img src="https://i.imgur.com/xJWrkOC.jpg"></img>
       <Overlay>
-        <TextImage>Test</TextImage>
+        <TextImage>Test</TextImage>   
       </Overlay>
     </HelpedTile>
     <HelpedTile>
